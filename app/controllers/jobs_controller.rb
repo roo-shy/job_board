@@ -1,4 +1,8 @@
 class JobsController < ApplicationController
+
+  before_action :find_job, only: [:show, :update, :edit, :destroy]
+
+  
   def index
   end
 
@@ -30,9 +34,11 @@ class JobsController < ApplicationController
   private
 
   def jobs_params
+    params.require(:job).permit(:title, :description, :company, :url)
   end
 
   def find_job
+    @job = Job.find(params[:id])
   end
 
 end
