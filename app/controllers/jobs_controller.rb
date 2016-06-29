@@ -2,7 +2,7 @@ class JobsController < ApplicationController
 
   before_action :find_job, only: [:show, :update, :edit, :destroy]
 
-  
+
   def index
   end
 
@@ -21,7 +21,8 @@ class JobsController < ApplicationController
     else
       render "New"
   end
-
+ end
+ 
   def update
   end
 
