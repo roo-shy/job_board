@@ -45,6 +45,6 @@ group :development do
   gem 'spring'
 end
 
-gem 'simple_form'
-gem 'haml'
+gem 'simple_form', '~> 3.0.2'
+gem 'haml', '~> 4.0.5'
 gem 'bootstrap-sass'
