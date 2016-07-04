@@ -24,10 +24,10 @@ class JobsController < ApplicationController
   end
  end
 
-  def update
+  def edit
   end
 
-  def edit
+  def update
     if @job.update(jobs_params)
       redirect_to @job
     else
